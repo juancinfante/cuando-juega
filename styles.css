@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("https://tripin.travel/wp-content/uploads/2016/09/la-bombonera.jpg");
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+}
+
+.match-container{
+  margin-top: 50px;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prox-match{
+  width: 700px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.prox-match h1{
+  width: 100%;
+  text-align: center;
+}
+
+.team1{
+  text-align: center;
+}
+
+.team1 p{
+  font-size: 30px;
+}
+
+.scoring{
+  font-size: 20px;
+}
+
+.team2{
+  text-align: center;
+  font-size: 30px;
+}
+.max-width{
+  width: 500px;
+}
