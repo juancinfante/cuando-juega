@@ -7,52 +7,68 @@
 }
 
 body{
-  background-image: url("https://tripin.travel/wp-content/uploads/2016/09/la-bombonera.jpg");
   display: flex;
   justify-content: center;
   font-family: Poppins;
+  background-image: url("https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt37d79301c7a5fff5/615f554007aaed59472e96fe/8ceaebe28959e40c516d61509866a7b0b44df4b7.jpg?auto=webp&format=jpg&quality=60&w=1280");
+  background-size: cover;
+  
 }
-
-.match-container{
-  margin-top: 50px;
-  width: 800px;
+.contenedor{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  width: 500px;
 }
-
-.prox-match{
-  width: 700px;
-  background-color: aliceblue;
-  border-radius: 10px;
-  padding: 20px;
+.contenedor-partido{
+  background-color: #2B2628;
+  box-shadow: 0px 1px 44px -14px rgba(0,0,0,0.75);
+  padding: 20px 10px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  color: white;
+  margin-top: 50px;
+  border-radius: 20px;
 }
-.prox-match h1{
+.competicion, .fecha{
   width: 100%;
   text-align: center;
+  font-size: 1.2rem;
 }
 
-.team1{
+.fecha{
+  font-size: 1rem;
+}
+
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 150px;
   text-align: center;
 }
-
-.team1 p{
-  font-size: 30px;
+.equipo img{
+  width: 100px;
 }
-
-.scoring{
-  font-size: 20px;
-}
-
-.team2{
-  text-align: center;
-  font-size: 30px;
-}
-.max-width{
-  width: 500px;
+@media only screen and (max-width: 768px){
+  .contenedor-partido{
+    width: 80%;
+  }
+  .equipo{
+    width: 80px;
+    font-size: .8rem;
+  }
+  .equipo img{
+    width: 60px;
+  }
+  .competicion{
+    font-size: 1rem;
+  }
+  .fecha{
+    font-size: .8rem;
+  }
 }
