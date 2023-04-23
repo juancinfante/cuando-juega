@@ -1,5 +1,4 @@
-# cuando-juega-boca
-App de cuando juega boca consumiendo datos de la API api-football.com
-
-Muestra los proximos 3 partidos de Boca Juniors con fecha, lugar, horario y campeonato a jugar.
+# cuando-juega
+App que te muestra cuando juega tu equipo.
+Se elije el equipo y te muestra los proximos 10 partidos con fecha, horario y lugar.
 
