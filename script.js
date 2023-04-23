@@ -4,10 +4,37 @@ var dateMatch = document.getElementById("dateMatch");
 
 
 
-function getData(){
 
-  
-  fetch("https://v3.football.api-sports.io/fixtures?season=2023&team=451&next=3",{
+
+
+// var seletedValue = document.getElementById('equipos').value;
+
+
+
+// function getSelectedValue(){
+//   var selectedValue = document.getElementById('equipos').value;
+
+//   return selectedValue;
+// }
+
+// var URL = new URL('https://v3.football.api-sports.io/fixtures?season=2023&team=435&next=3');
+// var equipo = getSelectedValue();
+
+// URL.searchParams.set('team', getSelectedValue());
+
+
+function getData(){
+  var select = document.getElementById('equipos');
+  var value = select.options[select.selectedIndex].value;
+
+  console.log(value);
+
+
+  var URL = 'https://v3.football.api-sports.io/fixtures?season=2023&team=&next=10';
+  var txt2 = URL.slice(0, 60) + value + URL.slice(60);
+  console.log(txt2)
+  contenedor.innerHTML = "";
+  fetch(txt2,{
     method: "GET",
     headers: {
       "x-rapidapi-key": "0f44f04fd33a6e5f665b921287605a7c",
@@ -17,14 +44,16 @@ function getData(){
   .then((response) => response.json())
   .then(data =>{
     for(i=0;i<data.response.length;i++){
-
+      
       // SETEANDO FECHA Y HORARIO
       var date = new Date(data.response[i].fixture.date)
     
       // Agregando un 0 al mes si es necesario
       var month = ((date.getMonth()+1) < 10 ? "0" + (date.getMonth()+1) : date.getMonth())
 
+
     // SETEANDO PARTIDO 
+    
     contenedor.innerHTML += `
     <div class="contenedor-partido">
     <h2 class="competicion">${data.response[i].league.name}</h2>
@@ -44,5 +73,5 @@ function getData(){
   })
   .catch(err => console.error(err));
 }
-    
+
 getData()

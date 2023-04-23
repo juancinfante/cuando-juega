@@ -7,19 +7,43 @@
 }
 
 body{
-  display: flex;
-  justify-content: center;
   font-family: Poppins;
-  background-image: url("https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt37d79301c7a5fff5/615f554007aaed59472e96fe/8ceaebe28959e40c516d61509866a7b0b44df4b7.jpg?auto=webp&format=jpg&quality=60&w=1280");
-  background-size: cover;
+  background-image: url("https://canalshowsport.com.ar/wp-content/uploads/2021/02/sorteo-lpf.jpg");
+  background-size: repeat;
   
 }
+
+.contenedor-general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.contenedor-boton{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+label{
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.contenedor.partidos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
 .contenedor{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 500px;
 }
 .contenedor-partido{
   background-color: #2B2628;
@@ -55,8 +79,9 @@ body{
   width: 100px;
 }
 @media only screen and (max-width: 768px){
+  
   .contenedor-partido{
-    width: 80%;
+    width: 350px;
   }
   .equipo{
     width: 80px;

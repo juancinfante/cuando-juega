@@ -18,11 +18,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="contenedor" id="contenedor">
+  <div class="contenedor-general">
   
+<div class="contenedor-boton">
+  <label for="equipos">Elije un equipo:</label>
+<select id="equipos" name="equipos">
+  <option disabled selected value> -- </option>
+<option value="451">Boca Juniors</option>
+<option value="434">Gimnasia L.P.</option>
+<option value="435">River Plate</option>
+<option value="436">Racing Club</option>
+<option value="437">Rosario Central</option>
+<option value="438">Velez Sarfield</option>
+<option value="439">Godoy Cruz</option>
+<option value="440">Belgrano</option>
+<option value="441">Union</option>
+<option value="442">Defensa y Justicia</option>
+<option value="445">Huracan</option>
+<option value="446">Lanus</option>
+<option value="448">Colon</option>
+<option value="449">Banfield</option>
+<option value="450">Estudiantes L.P.</option>
+<option value="452">Tigre</option>
+<option value="453">Independiente</option>
+<option value="455">Atletico Tucuman</option>
+<option value="456">Talleres</option>
+<option value="457">Newells</option>
+<option value="458">Argentinos Jrs</option>
+<option value="459">Arsenal Sarandi</option>
+<option value="460">San Lorenzo</option>
+<option value="474">Sarmiento Junin</option>
+<option value="1065">Central Cordoba</option>
+<option value="1064">Platense</option>
+<option value="2432">Barracas Central</option>
+</select>
+<button onclick="getData()">Buscar</button>
+</div>
+<div class="contenedor-partidos" id="contenedor">
   </div>
-  
+</div>
   
 </div>
 </body>
