@@ -30,7 +30,7 @@ function getData(){
   console.log(value);
 
 
-  var URL = 'https://v3.football.api-sports.io/fixtures?season=2022&team=&next=10';
+  var URL = 'https://v3.football.api-sports.io/fixtures?season=2022&team=&last=10';
   var txt2 = URL.slice(0, 60) + value + URL.slice(60);
   console.log(txt2)
   contenedor.innerHTML = "";
